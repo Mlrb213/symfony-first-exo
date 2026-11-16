@@ -7,9 +7,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class UserController extends AbstractController
 {
-    public function profile(): Response
+    public function profile(string $name): Response
     {
-        $name = 'Alice Martin';
         $age = 25;
         $city = 'Marseille';
 
